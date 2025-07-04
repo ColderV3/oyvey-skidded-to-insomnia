@@ -30,18 +30,20 @@ public class ModuleManager implements Jsonable, Util {
     public List<Module> sortedModules = new ArrayList<>();
     public List<String> sortedModulesABC = new ArrayList<>();
 
-    public void init() {
-        modules.add(new HudModule());
-        modules.add(new ClickGui());
-        modules.add(new Criticals());
-        modules.add(new MCF());
-        modules.add(new Step());
-        modules.add(new ReverseStep());
-        modules.add(new FastPlace());
-        modules.add(new Velocity());
-        modules.add(new BlockHighlight());
-        modules.add(new NoFall());
-    }
+public void init() {
+    modules.add(new HudModule());
+    modules.add(new ClickGui());
+    modules.add(new Criticals());
+    modules.add(new MCF());
+    modules.add(new Step());
+    modules.add(new ReverseStep());
+    modules.add(new FastPlace());
+    modules.add(new Velocity());
+    modules.add(new BlockHighlight());
+    modules.add(new NoFall());
+    modules.add(new KillAura());
+}
+
 
     public Module getModuleByName(String name) {
         for (Module module : this.modules) {
