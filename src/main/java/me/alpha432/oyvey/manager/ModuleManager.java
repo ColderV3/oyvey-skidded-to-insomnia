@@ -41,8 +41,6 @@ public void init() {
     modules.add(new Velocity());
     modules.add(new BlockHighlight());
     modules.add(new NoFall());
-    modules.add(new KillAura());
-    modules.add(new ESP());
 
 }
 
