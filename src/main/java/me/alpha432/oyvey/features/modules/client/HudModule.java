@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.features.modules.client;
+package me.alpha432.insomnia.features.modules.client;
 
-import me.alpha432.oyvey.OyVey;
+import me.alpha432.insomnia.Insomnia;
 import me.alpha432.oyvey.event.impl.Render2DEvent;
 import me.alpha432.oyvey.features.modules.Module;
 
@@ -12,7 +12,8 @@ public class HudModule extends Module {
     @Override public void onRender2D(Render2DEvent event) {
         event.getContext().drawTextWithShadow(
                 mc.textRenderer,
-                OyVey.NAME + " " + OyVey.VERSION,
+                Insomnia.NAME + " " + Insomnia.VERSION
+
                 2, 2,
                 -1
         );
